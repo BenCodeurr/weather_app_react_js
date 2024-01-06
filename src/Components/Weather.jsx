@@ -1,3 +1,4 @@
+
 import './Weather.css'
 
 import wind_icon from '../Assets/wind.png';
@@ -10,9 +11,8 @@ import rain_icon from '../Assets/rain.png';
 import clear_icon from '../Assets/clear.png';
 import { useState } from 'react';
 
-
 export const Weather = () => {
-    let api_key = '64e27350a7f1134f0c9bfd6d95c4f1a8';
+    let api_key = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
     const [weatherIcon, setWeatherIcon] = useState(cloud_icon);
 

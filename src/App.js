@@ -1,8 +1,8 @@
-
 import './App.css';
 import { Weather } from './Components/Weather';
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
       <Weather/>
